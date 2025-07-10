@@ -14,29 +14,32 @@ const Home: NextPage = () => {
       <div className="flex items-center flex-col grow pt-10">
         <div className="px-5">
           <h1 className="text-center">
-            <span className="block text-2xl mb-2">Welcome to</span>
-            <span className="block text-4xl font-bold">Scaffold-ETH 2</span>
+            <span className="block text-2xl mb-2">ETH-KIPU TP 4</span>
+            <span title="Front End para el contrato Simple Swap" className="block text-4xl font-bold">
+              Simple Swap FE
+            </span>
           </h1>
           <div className="flex justify-center items-center space-x-2 flex-col">
-            <p className="my-2 font-medium">Connected Address:</p>
-            <Address address={connectedAddress} />
+            <p className="my-2 font-medium">Let&apos;s do some swapping!</p>
           </div>
 
           <p className="text-center text-lg">
-            Get started by editing{" "}
+            Use the debug section below to manually interact with{" "}
             <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/nextjs/app/page.tsx
+              SimpleSwap.sol
             </code>
           </p>
+          <p className="my-2 font-medium">Connected Address:</p>
+          <Address address={connectedAddress} />
           <p className="text-center text-lg">
-            Edit your smart contract{" "}
+            <span className="text-secondary">Note:</span> This is a simple front-end for the{" "}
             <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              YourContract.sol
+              SimpleSwap.sol
             </code>{" "}
-            in{" "}
-            <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
-              packages/hardhat/contracts
-            </code>
+            contract. It does not include any additional features or functionalities.
+            <br />
+            <br />
+            This Version can be tested using local node (yarn chain on your local machine)
           </p>
         </div>
 
