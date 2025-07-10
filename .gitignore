@@ -21,3 +21,5 @@ node_modules
 
 # cli
 dist
+packages/nextjs/app/oldpage.tsx
+packages/nextjs/components/old_Header.tsx
